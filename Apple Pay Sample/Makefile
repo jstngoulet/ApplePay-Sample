@@ -6,4 +6,4 @@ documentation:
   --documentation=../*.md \
   --output ../public/docs \
   --min-acl internal
-@rm -rf ./build
+ @rm -rf ./build
