@@ -1,9 +1,10 @@
-documentation: 
- @jazzy \
-  --clean \
-  --author HyreCar \
-  --theme fullwidth \
-  --documentation=../*.md \
-  --output ../public/docs \
-  --min-acl internal
- @rm -rf ./build
+documentation:
+    @jazzy \
+        --clean \
+        --author HyreCar \
+        --min-acl internal \
+        --no-hide-documentation-coverage \
+        --theme fullwidth \
+        --output ../public/docs \
+        --documentation=../*.md
+    @rm -rf ./build
