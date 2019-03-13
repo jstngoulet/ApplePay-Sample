@@ -7,8 +7,6 @@ pages:
   script:
   - gem install jazzy -v 0.9.5
   - mkdir .public
-  - cd Apple\ Pay\ Sample
-  - make documentation
   - cp -r * .public
   - mv .public public
   artifacts:
