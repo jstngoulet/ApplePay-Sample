@@ -1,0 +1,18 @@
+
+
+## Ignore all warnings from the retained libraries
+inhibit_all_warnings!
+
+## Required for using Swift
+use_frameworks!
+
+## Lowest Available platform is iOS 10
+platform :ios, '10.0'
+
+target 'Apple Pay Sample' do
+
+    # Reactive Libraries
+	pod 'RxSwift'
+	pod 'RxCocoa'
+
+end
