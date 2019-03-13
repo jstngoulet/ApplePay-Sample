@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		420B495022387F8200601572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B494F22387F8200601572 /* AppDelegate.swift */; };
-		420B495222387F8200601572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B495122387F8200601572 /* ViewController.swift */; };
+		420B495222387F8200601572 /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B495122387F8200601572 /* ApplePayViewController.swift */; };
 		420B495522387F8200601572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420B495322387F8200601572 /* Main.storyboard */; };
 		420B495722387F8700601572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420B495622387F8700601572 /* Assets.xcassets */; };
 		420B495A22387F8700601572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420B495822387F8700601572 /* LaunchScreen.storyboard */; };
 		420B496522387F8700601572 /* Apple_Pay_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B496422387F8700601572 /* Apple_Pay_SampleTests.swift */; };
 		420B497022387F8700601572 /* Apple_Pay_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B496F22387F8700601572 /* Apple_Pay_SampleUITests.swift */; };
+		420B49812238839D00601572 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B49802238839D00601572 /* HeaderView.swift */; };
+		420B49842238899500601572 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B49832238899500601572 /* Constants.swift */; };
+		420B498722388A0700601572 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B498622388A0700601572 /* UIView+Extension.swift */; };
+		420B4989223898BD00601572 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B4988223898BD00601572 /* BottomButton.swift */; };
+		420B498B223898FF00601572 /* CustomFullButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B498A223898FF00601572 /* CustomFullButton.swift */; };
+		420B498D2238994C00601572 /* CommonProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B498C2238994C00601572 /* CommonProtocols.swift */; };
+		420B498F22389AA500601572 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B498E22389AA500601572 /* UIColor+Extension.swift */; };
+		B6B67C2C65256D56174D97A1 /* Pods_Apple_Pay_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9306E523A6FB5C85E944802 /* Pods_Apple_Pay_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F2915042118AE89D6A776D3 /* Pods-Apple Pay Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apple Pay Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apple Pay Sample/Pods-Apple Pay Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		420B494C22387F8200601572 /* Apple Pay Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Pay Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		420B494F22387F8200601572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		420B495122387F8200601572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		420B495122387F8200601572 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
 		420B495422387F8200601572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		420B495622387F8700601572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		420B495922387F8700601572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,16 @@
 		420B496B22387F8700601572 /* Apple Pay SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple Pay SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		420B496F22387F8700601572 /* Apple_Pay_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_Pay_SampleUITests.swift; sourceTree = "<group>"; };
 		420B497122387F8700601572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420B497D2238804300601572 /* Apple Pay Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Apple Pay Sample.entitlements"; sourceTree = "<group>"; };
+		420B49802238839D00601572 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		420B49832238899500601572 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		420B498622388A0700601572 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		420B4988223898BD00601572 /* BottomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
+		420B498A223898FF00601572 /* CustomFullButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFullButton.swift; sourceTree = "<group>"; };
+		420B498C2238994C00601572 /* CommonProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonProtocols.swift; sourceTree = "<group>"; };
+		420B498E22389AA500601572 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		89510C259E11972F34D09955 /* Pods-Apple Pay Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apple Pay Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apple Pay Sample/Pods-Apple Pay Sample.release.xcconfig"; sourceTree = "<group>"; };
+		D9306E523A6FB5C85E944802 /* Pods_Apple_Pay_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apple_Pay_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B67C2C65256D56174D97A1 /* Pods_Apple_Pay_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +101,8 @@
 				420B496322387F8700601572 /* Apple Pay SampleTests */,
 				420B496E22387F8700601572 /* Apple Pay SampleUITests */,
 				420B494D22387F8200601572 /* Products */,
+				4A4730F65C9C31FDB8F786F1 /* Pods */,
+				B461D2F0A453C7FBDF01F7AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +119,12 @@
 		420B494E22387F8200601572 /* Apple Pay Sample */ = {
 			isa = PBXGroup;
 			children = (
+				420B4985223889F800601572 /* Extensions */,
+				420B49822238898700601572 /* Constants */,
+				420B497F2238837C00601572 /* Components */,
+				420B497E2238837400601572 /* Controllers */,
+				420B497D2238804300601572 /* Apple Pay Sample.entitlements */,
 				420B494F22387F8200601572 /* AppDelegate.swift */,
-				420B495122387F8200601572 /* ViewController.swift */,
 				420B495322387F8200601572 /* Main.storyboard */,
 				420B495622387F8700601572 /* Assets.xcassets */,
 				420B495822387F8700601572 /* LaunchScreen.storyboard */,
@@ -125,6 +151,59 @@
 			path = "Apple Pay SampleUITests";
 			sourceTree = "<group>";
 		};
+		420B497E2238837400601572 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				420B495122387F8200601572 /* ApplePayViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		420B497F2238837C00601572 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				420B498A223898FF00601572 /* CustomFullButton.swift */,
+				420B4988223898BD00601572 /* BottomButton.swift */,
+				420B49802238839D00601572 /* HeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		420B49822238898700601572 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				420B49832238899500601572 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		420B4985223889F800601572 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				420B498C2238994C00601572 /* CommonProtocols.swift */,
+				420B498622388A0700601572 /* UIView+Extension.swift */,
+				420B498E22389AA500601572 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A4730F65C9C31FDB8F786F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F2915042118AE89D6A776D3 /* Pods-Apple Pay Sample.debug.xcconfig */,
+				89510C259E11972F34D09955 /* Pods-Apple Pay Sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B461D2F0A453C7FBDF01F7AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9306E523A6FB5C85E944802 /* Pods_Apple_Pay_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 420B497422387F8700601572 /* Build configuration list for PBXNativeTarget "Apple Pay Sample" */;
 			buildPhases = (
+				43A5F3DD631C582D8B6D517A /* [CP] Check Pods Manifest.lock */,
 				420B494822387F8200601572 /* Sources */,
 				420B494922387F8200601572 /* Frameworks */,
 				420B494A22387F8200601572 /* Resources */,
+				D8B081DC43EDD5D6584E52FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +274,11 @@
 				TargetAttributes = {
 					420B494B22387F8200601572 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
 					};
 					420B495F22387F8700601572 = {
 						CreatedOnToolsVersion = 10.1;
@@ -251,13 +337,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43A5F3DD631C582D8B6D517A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apple Pay Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B081DC43EDD5D6584E52FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Apple Pay Sample/Pods-Apple Pay Sample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Apple Pay Sample/Pods-Apple Pay Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		420B494822387F8200601572 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420B495222387F8200601572 /* ViewController.swift in Sources */,
+				420B4989223898BD00601572 /* BottomButton.swift in Sources */,
+				420B495222387F8200601572 /* ApplePayViewController.swift in Sources */,
+				420B49812238839D00601572 /* HeaderView.swift in Sources */,
+				420B498F22389AA500601572 /* UIColor+Extension.swift in Sources */,
 				420B495022387F8200601572 /* AppDelegate.swift in Sources */,
+				420B498722388A0700601572 /* UIView+Extension.swift in Sources */,
+				420B498B223898FF00601572 /* CustomFullButton.swift in Sources */,
+				420B498D2238994C00601572 /* CommonProtocols.swift in Sources */,
+				420B49842238899500601572 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +574,10 @@
 		};
 		420B497522387F8700601572 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2915042118AE89D6A776D3 /* Pods-Apple Pay Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Apple Pay Sample/Apple Pay Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C77H784CS3;
 				INFOPLIST_FILE = "Apple Pay Sample/Info.plist";
@@ -439,7 +585,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hyrecar.ios.app.Apple-Pay-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyrecar.ios.Apple-Pay-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,8 +594,10 @@
 		};
 		420B497622387F8700601572 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89510C259E11972F34D09955 /* Pods-Apple Pay Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Apple Pay Sample/Apple Pay Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C77H784CS3;
 				INFOPLIST_FILE = "Apple Pay Sample/Info.plist";
@@ -457,7 +605,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hyrecar.ios.app.Apple-Pay-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyrecar.ios.Apple-Pay-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
