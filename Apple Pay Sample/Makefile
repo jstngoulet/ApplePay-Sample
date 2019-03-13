@@ -6,5 +6,5 @@ documentation:
         --no-hide-documentation-coverage \
         --theme fullwidth \
         --output ../public/docs \
-        --documentation=../*.md
+        --documentation ../*.md
     @rm -rf ./build
