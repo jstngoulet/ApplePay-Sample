@@ -14,6 +14,7 @@ extension UIView {
     /// Get the offset from the constants file and make it available in any view
     var offset: CGFloat { return Constants.ViewSizes.offset }
     
+    /// Add a shadow around view, without effecting th corner radius.
     func shadowAround() {
         layer.masksToBounds = false
         layer.shadowOffset = CGSize(width: 0, height: 1)
@@ -23,6 +24,7 @@ extension UIView {
         layer.cornerRadius = max(5, layer.cornerRadius)
     }
     
+    /// Sets up an observer on the current view to listen for changes in teh background color, then animates the change
     func listenForColorChange() {
         _ = UIColor.BackgroundColorRelay.subscribe(onNext: { (newColor) in
             runOnMainThreadWith(delay: 0, closure: {
@@ -33,6 +35,7 @@ extension UIView {
         })
     }
     
+    /// Sets up an observer that listens for a subview color change, then animates the change
     func listenForSubviewColorChange() {
         _ = UIColor.SubviewBackgroundColorRelay.subscribe(onNext: { (newColor) in
             runOnMainThreadWith(delay: 0, closure: {

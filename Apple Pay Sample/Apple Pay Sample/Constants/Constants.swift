@@ -9,9 +9,15 @@
 import Foundation
 import UIKit
 
+/**
+    Create a struct of Constants to be accessable when needed throughout the application. This is to ensure consistancy
+ */
 struct Constants {
     
+    /// Sub struct of View Sizes
     struct ViewSizes {
+        
+        /// Offset from the edge we want to apply to certain views
         static let offset: CGFloat = 20
     }
     

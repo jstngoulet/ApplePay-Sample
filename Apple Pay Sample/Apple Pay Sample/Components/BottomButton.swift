@@ -8,18 +8,28 @@
 
 import UIKit
 
+/**
+    Creates a button at the bottom of the view
+ */
 class BottomButton: UIView, DesignProtocol {
     
     /// Button
-    private var _mainButton: CustomFullButton!
+    private var mainButton: CustomFullButton!
     
     //  Accessable elements, mutates design if needed
+    
+    /// The current button title, using a custom didSet function.
+    /// When the value is changed, the button title is set accordingly in the UI
     var buttonTitle: String = "Button Title"{
         didSet {
             setButtonTitle()
         }
     }
+    
+    /// The button action to perform when the button is selected
     var buttonAction: StandardCompletion = {}
+    
+    /// The default button height to be displayed. DEfaults to 50
     private var buttonHeight: CGFloat = 50
 
     /// Create a new bottom buttom with the set title and action. This button will appear at the bottom of the frame by default
@@ -63,8 +73,8 @@ extension BottomButton {
     ///
     /// - Returns: self
     private func buildButton() -> Self {
-        if _mainButton != nil { return self }
-        _mainButton = CustomFullButton(
+        if mainButton != nil { return self }
+        mainButton = CustomFullButton(
             frame: CGRect(
                 x: offset,
                 y: offset,
@@ -72,12 +82,12 @@ extension BottomButton {
                 height: buttonHeight
             )
         )
-        _mainButton.layer.cornerRadius = 5
-        _mainButton.backgroundColor = UIColor.gray
-        _mainButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        mainButton.layer.cornerRadius = 5
+        mainButton.backgroundColor = UIColor.gray
+        mainButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         setButtonTitle()
-        _mainButton.addTarget(self, action: #selector(buttonSelected), for: UIControl.Event.touchUpInside)
-        addSubview(_mainButton)
+        mainButton.addTarget(self, action: #selector(buttonSelected), for: UIControl.Event.touchUpInside)
+        addSubview(mainButton)
         return self
     }
 }
@@ -87,7 +97,7 @@ extension BottomButton {
     
     /// Sets the button title in a single function to ensure consistancy
     private func setButtonTitle() {
-        _mainButton.setTitle(buttonTitle, for: .normal)
+        mainButton.setTitle(buttonTitle, for: .normal)
     }
     
 }
