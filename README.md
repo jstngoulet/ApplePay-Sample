@@ -47,6 +47,7 @@ jazzy \
   --theme fullwidth \
   --documentation=../*.md \
   --output ../public/docs \
+  --no-hide-documentation-coverage \
   --min-acl internal
 ```
 
