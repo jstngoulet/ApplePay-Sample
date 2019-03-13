@@ -7,6 +7,8 @@ pages:
   script:
   - gem install jazzy -v 0.9.5
   - mkdir .public
+  - cd Apple\ Pay\ Sample
+  - jazzy --clean --author HyreCar --theme fullwidth --documentation=../*.md --output ../public/docs --no-hide-documentation-coverage --min-acl private 
   - cp -r * .public
   - mv .public public
   artifacts:
