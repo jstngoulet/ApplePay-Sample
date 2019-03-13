@@ -50,7 +50,7 @@ class ApplePayViewController: UIViewController {
         return request
     }()
     
-    /// When the view loaded, run some additonal UI Stull
+    /// When the view loaded, run some additonal UI Still
     override func viewDidLoad() {
         super.viewDidLoad()
         

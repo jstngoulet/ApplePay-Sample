@@ -46,7 +46,7 @@ class BottomButton: UIView, DesignProtocol {
     
 }
 
-// MARK: - DEsign
+// MARK: - Design
 extension BottomButton {
     
     /// Builds the parent view and the child view
