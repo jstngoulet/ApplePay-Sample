@@ -9,7 +9,7 @@ pages:
   - mkdir .public
   # - cd Apple\ Pay\ Sample
   # - jazzy --clean \ --author HyreCar \ --theme fullwidth \ --documentation=../*.md \ --output ../public/docs \ --min-acl private 
-  - cd ..
+  # - cd ..
   - cp -r * .public
   - mv .public public
   artifacts:
