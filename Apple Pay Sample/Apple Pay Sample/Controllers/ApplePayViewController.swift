@@ -174,6 +174,9 @@ extension ApplePayViewController {
         return self
     }
     
+    /// Add the product description label directly beneath the title label
+    ///
+    /// - Returns: Self
     private func addProductDescriptionLabel() -> Self {
         if productDescriptionLabel != nil { return self }
         

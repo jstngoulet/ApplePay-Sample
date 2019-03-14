@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+/**
+ UI View estension to adda additional functions to the common UIVIew class, does not require it to be subclassed
+ */
 extension UIView {
     
     /// Get the offset from the constants file and make it available in any view

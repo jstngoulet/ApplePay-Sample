@@ -11,5 +11,6 @@ import UIKit
 
 /// Protocol that every custom child view should implement
 protocol DesignProtocol {
+    /// Function to build the view, ensures document consistancy
     func build()
 }

@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (80% documented)
+         (100% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -138,7 +138,7 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Controller of the main application</p>
 
           </div>
         </section>
@@ -160,7 +160,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The current window of the application</p>
 
                       </div>
                       <div class="declaration">
@@ -187,7 +187,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Every time the application finishes to launch, this function is called. This includes all from any state to active</p>
 
                       </div>
                       <div class="declaration">
@@ -197,6 +197,41 @@
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current application to be launched</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>launchOptions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The options that should be launched with the application. This can be deep link options, URI Scheems, or other information passed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Whether ethe application finished launching</p>
                       </div>
                     </section>
                   </div>
@@ -214,7 +249,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.</p>
 
                       </div>
                       <div class="declaration">
@@ -241,7 +277,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.</p>
 
                       </div>
                       <div class="declaration">
@@ -268,7 +305,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.</p>
 
                       </div>
                       <div class="declaration">
@@ -295,7 +332,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.</p>
 
                       </div>
                       <div class="declaration">
@@ -322,7 +359,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.</p>
 
                       </div>
                       <div class="declaration">
@@ -344,7 +381,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">HyreCar</a>. All rights reserved. (Last updated: 2019-03-13)</p>
+      <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">HyreCar</a>. All rights reserved. (Last updated: 2019-03-14)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

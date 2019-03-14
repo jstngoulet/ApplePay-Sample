@@ -13,7 +13,7 @@ import UIKit
  */
 class BottomButton: UIView, DesignProtocol {
     
-    /// Button
+    /// Primary button in the footer view area
     private var mainButton: CustomFullButton!
     
     //  Accessable elements, mutates design if needed
