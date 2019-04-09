@@ -1,6 +1,5 @@
 # This file is a template, and might need editing before it works on your project.
 # Full project: https://gitlab.com/pages/plain-html
-image: ruby:2.3
 
 pages:
   stage: deploy
@@ -8,7 +7,7 @@ pages:
   - gem install jazzy -v 0.9.5
   - mkdir .public
   # - cd Apple\ Pay\ Sample
-  # - jazzy --clean \ --author HyreCar \ --theme fullwidth \ --documentation=../*.md \ --output ../public/docs \ --min-acl private 
+  - jazzy --clean \ --author HyreCar \ --theme fullwidth \ --documentation=../*.md \ --output ../public/docs \ --min-acl private 
   # - cd ..
   - cp -r * .public
   - mv .public public
@@ -17,3 +16,8 @@ pages:
     - public
   only:
   - master
+  tags:
+    - ios_12-1
+    - xcode_10-2
+    - osx_10-11
+
